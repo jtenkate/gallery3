@@ -43,10 +43,15 @@
     <li id="g-login-form">
       <?= $form ?>
     </li>
+<?/* Disable Reset password function
     <? if (identity::is_writable() && !module::get_var("gallery", "maintenance_mode")): ?>
     <li>
       <a href="#" id="g-password-reset" class="g-right g-text-small"><?= t("Forgot your password?") ?></a>
     </li>
     <? endif ?>
+*/?>
   </ul>
 </div>
+<?/* Reference to general lost password info */?>
+<p class="g-left g-text-small"><?= t("Problems logging in?") ?>&nbsp</p>
+<p class="g-left g-text-small"><?= t("Please check our FAQ-section.") ?></p>
